@@ -10,3 +10,4 @@ Your goal is to earn as many points as possible, which will translate into extra
 
 
 <button name="next" onclick="https://marissaradensky.github.io/buttons/tutorial.html">Next</button>
+[Next](https://marissaradensky.github.io/buttons/tutorial.html)
