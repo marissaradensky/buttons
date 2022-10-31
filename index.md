@@ -1,3 +1,5 @@
+# Instructions
+
 For each of 30 questions, an AI prediction and its confidence in its prediction will be provided. How the confidence is presented will vary.
 
 The AI will predict whether you should hit Button A or Button B. You will not be told anything else about Button A or Button B. 
