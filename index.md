@@ -9,5 +9,4 @@ You will have two options: 1) go along with the AI prediction or 2) pass. Each o
 Your goal is to earn as many points as possible, which will translate into extra money earnings (up to $5).
 
 
-<button name="next" onclick="https://marissaradensky.github.io/buttons/tutorial.html">Next</button>
 [Next](https://marissaradensky.github.io/buttons/tutorial.html)
