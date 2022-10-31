@@ -5,3 +5,6 @@ The AI will predict whether you should hit Button A or Button B. You will not be
 You will have two options: 1) go along with the AI prediction or 2) pass. Each option will offer different amounts of points.
 
 Your goal is to earn as many points as possible, which will translate into extra money earnings (up to $5).
+
+
+<button name="next" onclick="https://marissaradensky.github.io/buttons/q1.html">Next</button>
