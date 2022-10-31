@@ -5,7 +5,7 @@ Please decide whether to pass or to agree with the AI’s prediction.
 The AI predicts that you should select **Button A**. 
 
 Confidence:
-![alt text](https://github.com/marissaradensky/buttons/blob/main/tutorial.jpg?raw=true)
+![pie chart confidence display](https://github.com/marissaradensky/buttons/blob/main/tutorial.png?raw=true)
 
 <input type="radio" id="agree" name="option1" value="Agree with AI">
 <label for="agree">Agree with AI (3 points if right; 0 points if wrong)</label><br>
