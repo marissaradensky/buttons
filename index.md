@@ -1,5 +1,4 @@
 # Instructions
-<b>Instructions</b>
 
 For each of 30 questions, an AI prediction and its confidence in its prediction will be provided. How the confidence is presented will vary.
 
