@@ -33,34 +33,33 @@
     <div>
         <input type="button" onclick="window.location.href='https://marissaradensky.github.io/buttons/tutorial.html';" name="option" value="Next" id="next">
     </div>
-
-    <script type='text/javascript'>
-        $('#button1').click(function(){
-         $.ajax({
-         type: "POST",
-         url: "abc.php",
-         data: "",
-         success: function(msg){
-             alert(msg);
-         },
-         error: function(XMLHttpRequest, textStatus, errorThrown) {
-            alert("Some error occured");
-         }
-         });
-        });
-        const btn = document.querySelector('#btn');        
-        const radioButtons = document.querySelectorAll('input[name="option"]');
-        btn.addEventListener("click", () => {
-            let selectedOption;
-            for (const radioButton of radioButtons) {
-                if (radioButton.checked) {
-                    selectedOption = radioButton.value;
-                    break;
-                }
-            }
-            // show the output:
-            output.innerText = selectedOption ? `You selected ${selectedOption}` : `You haven't selected any option`;
-        });
-    </script>
 </body>
+<script type='text/javascript'>
+    $('#button1').click(function(){
+     $.ajax({
+     type: "POST",
+     url: "abc.php",
+     data: "",
+     success: function(msg){
+         alert(msg);
+     },
+     error: function(XMLHttpRequest, textStatus, errorThrown) {
+        alert("Some error occured");
+     }
+     });
+    });
+    const btn = document.querySelector('#btn');        
+    const radioButtons = document.querySelectorAll('input[name="option"]');
+    btn.addEventListener("click", () => {
+        let selectedOption;
+        for (const radioButton of radioButtons) {
+            if (radioButton.checked) {
+                selectedOption = radioButton.value;
+                break;
+            }
+        }
+        // show the output:
+        output.innerText = selectedOption ? `You selected ${selectedOption}` : `You haven't selected any option`;
+    });
+</script>
 </html>
