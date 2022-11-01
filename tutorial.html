@@ -27,12 +27,26 @@
     </p>
 
     <p id="output"></p>
+    <button id="button1" type="button">Write to File</button>
     
     <div>
         <input type="button" onclick="window.location.href='https://marissaradensky.github.io/buttons/tutorial.html';" name="option" value="Next" id="next">
     </div>
 
     <script>
+        $('#button1').click(function(){
+         $.ajax({
+         type: "POST",
+         url: "abc.php",
+         data: "",
+         success: function(msg){
+             alert(msg);
+         },
+         error: function(XMLHttpRequest, textStatus, errorThrown) {
+            alert("Some error occured");
+         }
+         });
+        });
         const btn = document.querySelector('#btn');        
         const radioButtons = document.querySelectorAll('input[name="option"]');
         btn.addEventListener("click", () => {
