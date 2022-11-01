@@ -15,11 +15,11 @@
 
     <p>Please decide whether to pass or to agree with the AI’s prediction:</p>
     <div>
-        <input type="radio" name="option1" value="agree" id="agree">
+        <input type="radio" name="option" value="agree" id="agree">
         <label for="agree">Agree with AI (3 points if right; 0 points if wrong)</label>
     </div>
     <div>
-        <input type="radio" name="option2" value="pass" id="pass">
+        <input type="radio" name="option" value="pass" id="pass">
         <label for="pass">Pass (2 points)</label>
     </div>
     <p>
@@ -30,17 +30,17 @@
 
     <script>
         const btn = document.querySelector('#btn');        
-        const radioButtons = document.querySelectorAll('input[name="size"]');
+        const radioButtons = document.querySelectorAll('input[name="option"]');
         btn.addEventListener("click", () => {
-            let selectedSize;
+            let selectedOption;
             for (const radioButton of radioButtons) {
                 if (radioButton.checked) {
-                    selectedSize = radioButton.value;
+                    selectedOption = radioButton.value;
                     break;
                 }
             }
             // show the output:
-            output.innerText = selectedSize ? `You selected ${selectedSize}` : `You haven't selected any size`;
+            output.innerText = selectedOption ? `You selected ${selectedOption}` : `You haven't selected any size`;
         });
     </script>
 </body>
