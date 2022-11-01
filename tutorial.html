@@ -1,14 +1,65 @@
-# Tutorial
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Radio Button</title>
+</head>
+<body>
+    <b>Tutorial</b>
 
-Please decide whether to pass or to agree with the AI’s prediction.
+    Please decide whether to pass or to agree with the AI’s prediction.
 
-The AI predicts that you should select **Button A**. 
+    The AI predicts that you should select <b>Button A</b>. 
 
-Confidence:
-![pie chart confidence display](https://github.com/marissaradensky/buttons/blob/main/tutorial.png?raw=true)
+    Confidence:
+    <!--![pie chart confidence display](https://github.com/marissaradensky/buttons/blob/main/tutorial.png?raw=true)-->
 
+    <p>Select your size:</p>
+    <div>
+        <input type="radio" name="size" value="XS" id="xs">
+        <label for="xs">XS</label>
+    </div>
+    <div>
+        <input type="radio" name="size" value="S" id="s">
+        <label for="s">S</label>
+    </div>
+    <div>
+        <input type="radio" name="size" value="M" id="m">
+        <label for="m">M</label>
+    </div>
+    <div>
+        <input type="radio" name="size" value="L" id="l">
+        <label for="l">L</label>
+    </div>
+    <div>
+        <input type="radio" name="size" value="XL" id="xl">
+        <label for="xl">XL</label>
+    </div>
+    <div>
+        <input type="radio" name="size" value="XXL" id="xxl">
+        <label for="xxl">XXL</label>
+    </div>
+    <p>
+        <button id="btn">Show Selected Value</button>
+    </p>
 
-<input type="radio" id="agree" name="option1" value="Agree with AI">
-<label for="agree">Agree with AI (3 points if right; 0 points if wrong)</label><br>
-<input type="radio" id="pass" name="option2" value="Pass">
-<label for="pass">Pass (2 points)</label><br>
+    <p id="output"></p>
+
+    <script>
+        const btn = document.querySelector('#btn');        
+        const radioButtons = document.querySelectorAll('input[name="size"]');
+        btn.addEventListener("click", () => {
+            let selectedSize;
+            for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedSize = radioButton.value;
+                    break;
+                }
+            }
+            // show the output:
+            output.innerText = selectedSize ? `You selected ${selectedSize}` : `You haven't selected any size`;
+        });
+    </script>
+</body>
+</html>
