@@ -8,37 +8,20 @@
 <body>
     <p><b>TUTORIAL</b></p>
 
-    <p>Please decide whether to pass or to agree with the AI’s prediction.</p>
-
     <p>The AI predicts that you should select <b>Button A</b>.</p>
 
     Confidence:
     <img src="tutorial.png" alt="pie chart confidence display">
+    <!--https://github.com/marissaradensky/buttons/blob/main/-->
 
-    <p>Select your size:</p>
+    <p>Please decide whether to pass or to agree with the AI’s prediction:</p>
     <div>
-        <input type="radio" name="size" value="XS" id="xs">
-        <label for="xs">XS</label>
+        <input type="radio" name="option1" value="agree" id="agree">
+        <label for="agree">Agree with AI (3 points if right; 0 points if wrong)</label>
     </div>
     <div>
-        <input type="radio" name="size" value="S" id="s">
-        <label for="s">S</label>
-    </div>
-    <div>
-        <input type="radio" name="size" value="M" id="m">
-        <label for="m">M</label>
-    </div>
-    <div>
-        <input type="radio" name="size" value="L" id="l">
-        <label for="l">L</label>
-    </div>
-    <div>
-        <input type="radio" name="size" value="XL" id="xl">
-        <label for="xl">XL</label>
-    </div>
-    <div>
-        <input type="radio" name="size" value="XXL" id="xxl">
-        <label for="xxl">XXL</label>
+        <input type="radio" name="option2" value="pass" id="pass">
+        <label for="pass">Pass (2 points)</label>
     </div>
     <p>
         <button id="btn">Show Selected Value</button>
